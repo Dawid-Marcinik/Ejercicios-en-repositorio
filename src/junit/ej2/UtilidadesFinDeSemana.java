@@ -13,9 +13,9 @@ public class UtilidadesFinDeSemana {
 		
 		cal.set(anyo, mes, dia);
 		
-		if (anyo<1900||(dia>1 && anyo>=3000)) {
+		if (anyo<1900||(dia>1 && mes>=1 && anyo>=3000)) {
 			
-			throw new FechaException("La fecha introducida no es v·lida");
+			throw new FechaException("La fecha introducida no es v√°lida");
 			
 		}
 		
